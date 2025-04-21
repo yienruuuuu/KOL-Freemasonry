@@ -1,0 +1,26 @@
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+    // submodules
+    implementation project(':kol-freemasonry-common')
+    implementation project(':kol-freemasonry-telegram')
+    implementation project(':kol-freemasonry-twitter')
+
+    //spring
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    runtimeOnly("org.postgresql:postgresql")
+    //telegrambots
+    implementation 'org.telegram:telegrambots-longpolling:7.10.0'
+    implementation 'org.telegram:telegrambots-client:7.10.0'
+    //jackson
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
+    //swagger
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.6.0'
+    //cache
+    implementation 'com.github.ben-manes.caffeine:caffeine:3.1.8'
+    //版控使用flyway
+    implementation 'org.flywaydb:flyway-core'
+}

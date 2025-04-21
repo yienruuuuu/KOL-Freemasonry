@@ -1,2 +1,6 @@
 rootProject.name = 'KOL-Freemasonry'
 
+include 'kol-freemasonry-common'
+include 'kol-freemasonry-gateway'
+include 'kol-freemasonry-telegram'
+include 'kol-freemasonry-twitter'

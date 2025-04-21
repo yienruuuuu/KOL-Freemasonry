@@ -1,0 +1,24 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: dev-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: kol_freemasonry
+      TZ: Asia/Taipei
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - "5433:5432"
+    volumes:
+      - ../../pgdata:/var/lib/postgresql/data     # named volume
+    networks:
+      - dev-network
+
+networks:
+  dev-network:
+    driver: bridge
+
+volumes:
+  pgdata:      # 不指定 driver = 預設 local
