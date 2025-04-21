@@ -1,19 +1,23 @@
-plugins {
-    id 'java'
-}
-
-group = 'io.github.yienruuuuu'
-version = '1.0-SNAPSHOT'
-
-repositories {
-    mavenCentral()
-}
+apply plugin: 'org.springframework.boot'
 
 dependencies {
-    testImplementation platform('org.junit:junit-bom:5.10.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
-}
+    // submodules
+    implementation project(':kol-freemasonry-common')
 
-test {
-    useJUnitPlatform()
+    //spring
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+
+    //postgresql
+    runtimeOnly("org.postgresql:postgresql")
+
+    //telegrambots
+    implementation 'org.telegram:telegrambots-longpolling:7.10.0'
+    implementation 'org.telegram:telegrambots-client:7.10.0'
+
+    //jackson
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
 }
