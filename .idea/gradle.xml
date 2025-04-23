@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/kol-freemasonry-common" />
             <option value="$PROJECT_DIR$/kol-freemasonry-gateway" />
             <option value="$PROJECT_DIR$/kol-freemasonry-telegram" />
+            <option value="$PROJECT_DIR$/kol-freemasonry-twitter" />
           </set>
         </option>
       </GradleProjectSettings>

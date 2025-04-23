@@ -1,0 +1,2 @@
+手動開啟的chrome需配置:  
+"C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir="C:\selenium\ChromeProfile" --no-first-run --no-default-browser-check --remote-allow-origins=*

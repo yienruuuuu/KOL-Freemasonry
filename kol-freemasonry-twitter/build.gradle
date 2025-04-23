@@ -4,7 +4,6 @@ dependencies {
     // submodules
     implementation project(':kol-freemasonry-common')
     implementation project(':kol-freemasonry-telegram')
-    implementation project(':kol-freemasonry-twitter')
 
     //spring
     implementation 'org.springframework.boot:spring-boot-starter'
@@ -22,4 +21,8 @@ dependencies {
     //jackson
     implementation 'com.fasterxml.jackson.core:jackson-databind'
     implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
+
+    //selenuim
+    implementation 'org.seleniumhq.selenium:selenium-java:4.31.0'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.8.0'
 }
