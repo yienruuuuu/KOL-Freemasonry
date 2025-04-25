@@ -13,10 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
  * Date: 2025/4/21
  */
 @Slf4j
-@Tag(name = "Telegram controller")
+@Tag(name = "controller")
 @RestController
 @RequestMapping("admin")
 public class Controller {
+
     private final SeleniumService seleniumService;
 
     public Controller(SeleniumService seleniumService) {

@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
  */
 @Service("seleniumService")
 public class SeleniumServiceImpl implements SeleniumService {
+
     @Value("${selenium.chrome.address}")
     private String chromeAddress;
     @Value("${webdriver.chrome.path}")
