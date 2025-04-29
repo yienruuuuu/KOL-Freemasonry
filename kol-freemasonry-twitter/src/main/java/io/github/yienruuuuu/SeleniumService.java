@@ -15,4 +15,9 @@ public interface SeleniumService {
      * @return WebDriver
      */
     WebDriver getDriver();
+
+    /**
+     * 檢查使用者是否有Premium帳號
+     */
+    void checkUserHasValidInTwitter();
 }
