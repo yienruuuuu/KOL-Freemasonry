@@ -20,4 +20,9 @@ public interface SeleniumService {
      * 檢查使用者是否有Premium帳號
      */
     void checkUserHasValidInTwitter();
+
+    /**
+     * 檢查使用者是否有推文
+     */
+    void checkUserHasTweet();
 }
