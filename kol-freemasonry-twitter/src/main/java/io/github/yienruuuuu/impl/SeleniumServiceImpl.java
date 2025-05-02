@@ -33,7 +33,7 @@ public class SeleniumServiceImpl implements SeleniumService {
     private String chromeAddress;
     @Value("${webdriver.chrome.path}")
     private String chromeDriverPath;
-    private static final String URL = "https://x.com/connectfarm1/status/1916895490635080017";
+    private static final String URL = "https://x.com/crypto_two_face/status/1918192560499298379";
     private static final String MESSAGE_URL = "https://x.com/messages";
     private static final String MOCK_SEARCH_MESSAGE = "hi~ What exchange do you use?";
 
