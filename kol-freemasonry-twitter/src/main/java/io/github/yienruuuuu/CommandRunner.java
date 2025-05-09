@@ -17,6 +17,6 @@ public class CommandRunner implements CommandLineRunner {
 
     @Override
     public void run(String... args){
-        seleniumService.checkUserHasTweet();
+//        seleniumService.checkUserHasTweet();
     }
 }
